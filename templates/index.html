@@ -6,19 +6,23 @@
 	<body>
 		<div class="jumbotron">
 			<div class="container">
-				{% if forecast %}
-					<h1>{{  forecast  }}</h1>
+				{% if bar %}
+					<h1>{{  bar  }}</h1>
+					<h1>{{  weather  }}</h1>
 					<a href="{{ url_for('index') }}">Look up another address</a>
 				{% else %}
-					<h1>Hello! Where do you live?</h1>
+					<h1>Howdy partner! Where are you trying to down your sorrows tonight?</h1>
 					<form action="/" class="form-inline">
 						<div class="form-group">
-							<input type="text" name="address" placeholder="City, State" class="form-control">
+							<input type="text" name="address" placeholder="Zip code" class="form-control">
 						</div>
-						<input type="submit" value="Huh?" class="button-primary">
+						<input type="submit" value="Ready to drink?" class="button-primary">
 				{% endif %}
-				<a href="{{ url_for('about') }}">About this project</a>
+					
 			</div>
 		</div>
 	<body>
+	<footer>
+		<a href="{{ url_for('about') }}">About this project</a>
+	</footer>
 </html>

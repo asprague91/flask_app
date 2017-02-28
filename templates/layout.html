@@ -1,0 +1,12 @@
+<html>
+    <head>This is my header</head>
+    <header>/this is your static header</header>
+    <main>
+        {% block body %}
+        content will be here
+        {% endblock %}
+        {% include "index.html" %}
+    </main>
+    <footer> your static footer </footer>
+    <a href="{{ url_for('about') }}">About this project</a>
+</html>
