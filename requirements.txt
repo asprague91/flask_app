@@ -43,8 +43,6 @@ singledispatch==3.4.0.3
 six==1.10.0
 spyder==2.3.9
 sympy==1.0
-tables==3.2.2
-terminado==0.6
 toolz==0.8.0
 tornado==4.3
 traitlets==4.2.1
